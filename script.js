@@ -3,7 +3,7 @@ let cartCount = 0;
 const cartBtn = document.getElementById("cart-btn");
 const addToCartButtons = document.querySelectorAll(".add-to-cart");
 
-addToCartButtons.forEach(btn => {
+addToCartButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     cartCount++;
     cartBtn.textContent = `🛒 Cart (${cartCount})`;
